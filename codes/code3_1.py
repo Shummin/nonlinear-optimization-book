@@ -1,0 +1,14 @@
+'''
+コード3.1 ■ 最急降下法のコード
+'''
+import numpy as numpy
+from code2_2 import * # Wolfe条件のコードを読み込み
+def SteepestDescent(obj_f, nab_f, x_k, max_iter=1000, eps=1.e-8):
+    for k in range(max_iter):
+        d_k = -nab_f(x_k) #探索方向の計算
+        alpha = line_Wolfe(obj_f, nab_f, x_k, d_k)# 直線探索
+        x_k = x_k + alpha * d_k
+        if np.linalg.norm(nab_f(x_k)) <= eps: #終了判定
+            break
+    print('SD, iter:', k+1, 'f(x):', obj_f(x_k))
+    return x_k
