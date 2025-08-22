@@ -1,5 +1,6 @@
 # nonlinear-optimization-book
 成島康史，中山舜民，矢部博 著『[非線形最適化法 数理的基礎とPythonによる実装](https://www.ohmsha.co.jp/book/9784274233852/)』（オーム社，2025）のサポートページです．
+書籍に記載のサンプルコードを公開しています．
 
 [正誤表](https://shummin.github.io/support_book/nonlinear-optimization-book/)
 
@@ -18,26 +19,26 @@
 さらに，図のプログラムをノートブック形式で提供しています．
 
 ### Chapter 3.3.2 最急降下法と非線形共役勾配法の挙動の比較
-* [Chapter 3.3.2 最急降下法と非線形共役勾配法の挙動の比較](Chapter3_3_2.ipynb)
+* [Chapter 3.3.2 最急降下法と非線形共役勾配法の挙動の比較](codes/Chapter3_3_2.ipynb)
 
 ### Chapter 4.4.3 局所的収束率の検証
-* [Chapter 4.4.3 局所的収束率の検証](Chapter4_4_3.ipynb)
+* [Chapter 4.4.3 局所的収束率の検証](codes/Chapter4_4_3.ipynb)
 
 ### Chapter 5.3.5 非線形最小二乗法のサンプルコード
-* [Chapter 5.3.5 非線形最小二乗法のサンプルコード](Chapter5_3_2.ipynb)
+* [Chapter 5.3.5 非線形最小二乗法のサンプルコード](codes/Chapter5_3_2.ipynb)
 
 ### Chapter 8.9.1 近接勾配法と加速付き近接勾配法のサンプルコード
-* [Chapter 8.9.1 近接勾配法と加速付き近接勾配法のサンプルコード](Chapter8_9_1.ipynb)
+* [Chapter 8.9.1 近接勾配法と加速付き近接勾配法のサンプルコード](codes/Chapter8_9_1.ipynb)
 
 ### Chapter 8.9.2 ニュートン型近接勾配法のサンプルコード
-* [Chapter 8.9.2 ニュートン型近接勾配法のサンプルコード](Chapter8_9_2.ipynb)
+* [Chapter 8.9.2 ニュートン型近接勾配法のサンプルコード](codes/Chapter8_9_2.ipynb)
 
 ### Chapter 8.9.3 交互方向乗数法のサンプルコード
-* [Chapter 8.9.3 交互方向乗数法のサンプルコード](Chapter8_9_3.ipynb)
+* [Chapter 8.9.3 交互方向乗数法のサンプルコード](codes/Chapter8_9_3.ipynb)
 
 
 ### 書籍に載せていないコード
 書籍には載せていないプログラムをいくつか紹介します．
 #### 制約付き最適化のアルゴリズムの適用例
 紙面の都合上，7章の制約付き最適化のアルゴリズムを適用したコードは載せられませんでしたので，ここで補足します．
-* [制約付き最適化のアルゴリズムの適用例](Chapter7_supp.ipynb)
+* [制約付き最適化のアルゴリズムの適用例](codes/Chapter7_supp.ipynb)
