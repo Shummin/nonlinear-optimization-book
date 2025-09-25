@@ -2,7 +2,7 @@
 成島康史，中山舜民，矢部博 著『[非線形最適化法 数理的基礎とPythonによる実装](https://www.ohmsha.co.jp/book/9784274233852/)』（オーム社，2025）のサポートページです．
 書籍に記載のサンプルコードを公開しています．
 
-[正誤表](https://shummin.github.io/support_book/nonlinear-optimization-book/)
+[正誤表](https://shummin.github.io/documents/NLP_errata.pdf)
 
 ## 書籍情報
 * タイトル: [非線形最適化法 数理的基礎とPythonによる実装](https://www.ohmsha.co.jp/book/9784274233852/)
