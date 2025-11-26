@@ -3,7 +3,7 @@
 '''
 import numpy as np
 from scipy import optimize
-def out_penalty_method(obj_f, ineq_g, eq_h, x_k, rho = 1, max_iter=10, eps = 1e-8):
+def Exter_penalty_method(obj_f, ineq_g, eq_h, x_k, rho = 1, max_iter=10, eps = 1e-8):
     m, l = len(ineq_g(x_k)), len(eq_h(x_k)) # 不等式制約，等式制約の数を計算
     def pen_val(x): # ペナルティ関数を定義
         g_values, h_values = ineq_g(x), eq_h(x)
