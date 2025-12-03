@@ -3,6 +3,7 @@
 '''
 import numpy as np
 import cvxpy  as cp
+from code7_3 import * # 修正BFGSのコードを読み込み
 def SQP(obj_f, ineq_g, eq_h, nab_f, nab_g, nab_h, x_k, max_iter=100, xi = 0.1, eps = 1e-8):
     n, m, l = len(x_k), len(ineq_g(x_k)), len(eq_h(x_k)) # 問題の次元，制約の数を計算
     B_k, lamb, mu =  np.eye(n), np.zeros(m), np.zeros(l) # 初期行列の計算と変数 \lambda, \mu を定義
@@ -27,7 +28,7 @@ def SQP(obj_f, ineq_g, eq_h, nab_f, nab_g, nab_h, x_k, max_iter=100, xi = 0.1, e
         delta_x_k , lamb, mu = delta_x.value, subQP.constraints[0].dual_value, subQP.constraints[1].dual_value
         if np.linalg.norm(delta_x_k) < eps: # 終了判定
             break
-        rho = 2*np.max([np.abs(lamb),np.abs(mu)]) # メリット関数が降下方向になるrhoを計算
+        rho = 2*np.max([np.max(np.abs(lamb)),np.max(np.abs(mu))]) # メリット関数が降下方向になるrhoを計算
         x_k_old = x_k
         alpha, x_k = 1, x_k_old+delta_x_k
         P_old = merit_func(x_k_old,rho)
