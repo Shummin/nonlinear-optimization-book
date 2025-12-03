@@ -2,8 +2,9 @@
 コード7.5 ■ 主双対内点法(アルゴリズム7.8) のコード
 '''
 import numpy as np
+from code7_3 import * # 修正BFGSのコードを読み込み
 def PDIP(obj_f, eq_h, nab_f, nab_h, x_0, max_out_iter=20, max_in_iter=20, nu=0.1, beta=0.5,  tau = 0.25, xi = 0.01, omega = 0.2, eps=1e-6):
-    x_k, n, l =x0, len(x_0), len(eq_h(x_0))
+    x_k, n, l =x_0, len(x_0), len(eq_h(x_0))
     y_k, z_k = np.ones(l), np.ones(n)
     M, M_L, M_U = 1, 2, 2 # 各種パラメータ を定義
     def merit_func(x, nu0, rho0): # メリット関数を定義
